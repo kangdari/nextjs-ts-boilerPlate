@@ -11,17 +11,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.4",
     "@types/lodash": "^4.14.182",
     "@types/qs": "^6.9.7",
     "axios": "^0.27.2",
     "env-cmd": "^10.1.0",
     "lodash": "^4.17.21",
     "next": "12.2.5",
+    "next-redux-wrapper": "^7.0.5",
     "prettier": "^2.7.1",
     "qs": "^6.11.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-query": "^3.39.2"
+    "react-query": "^3.39.2",
+    "react-redux": "^8.0.2",
+    "redux-persist": "^6.0.0"
   },
   "devDependencies": {
     "@types/node": "18.7.3",
