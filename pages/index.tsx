@@ -1,11 +1,10 @@
-import type { NextPage } from "next";
-import { useAppSelector } from "../store";
-import { useDispatch } from "react-redux";
-import { increaseCount, resetCount } from "../store/slice/count";
+import { useDispatch } from 'react-redux';
+import { useAppSelector } from '../store';
+import { increaseCount, resetCount } from '../store/slice/count';
 
-const Home: NextPage = () => {
+const Home = () => {
   const dispatch = useDispatch();
-  const { count } = useAppSelector((state) => state.count);
+  const { count } = useAppSelector(state => state.count);
 
   return (
     <div>

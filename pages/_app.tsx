@@ -1,11 +1,11 @@
-import type { AppProps } from "next/app";
-import Head from "next/head";
-import { QueryClient, QueryClientProvider } from "react-query";
-import { Hydrate } from "react-query/hydration";
-import React from "react";
-import { Provider } from "react-redux";
-import { persistor, store, wrapper } from "../store";
-import { PersistGate } from "redux-persist/integration/react";
+import type { AppProps } from 'next/app';
+import Head from 'next/head';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { Hydrate } from 'react-query/hydration';
+import React from 'react';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
+import { persistor, store, wrapper } from '../store';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const queryClientRef = React.useRef<QueryClient>();
