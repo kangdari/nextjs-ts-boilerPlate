@@ -4,9 +4,7 @@ class CustomDocument extends Document {
   render(): JSX.Element {
     return (
       <Html lang="ko">
-        <Head>
-          {/*<script src="https://developers.kakao.com/sdk/js/kakao.js" async />*/}
-        </Head>
+        <Head></Head>
         <body>
           <Main />
           <NextScript />
