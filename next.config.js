@@ -20,13 +20,13 @@ const nextConfig = {
         },
       },
       // use: ['@svgr/webpack'],
-    });
-    return config;
+    })
+    return config
   },
   images: {},
   experimental: {
     scrollRestoration: true,
   },
-};
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
