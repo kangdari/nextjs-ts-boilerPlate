@@ -5,7 +5,8 @@ class CustomDocument extends Document {
     return (
       <Html lang="ko">
         <Head>
-          {/*<script src="https://developers.kakao.com/sdk/js/kakao.js" async />*/}
+          <link rel="shortcut icon" href="/favicon.ico" />
+          <meta name="viewport" content="initial-scale=1, width=device-width" />
         </Head>
         <body>
           <Main />

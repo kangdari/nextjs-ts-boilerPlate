@@ -1,19 +1,15 @@
-import { useDispatch } from 'react-redux';
-import { useAppSelector } from '../store';
-import { increaseCount, resetCount } from '../store/slice/count';
+import { Button } from '@mui/material';
+import Layout from '@components/Layout';
 
-const Home = () => {
-  const dispatch = useDispatch();
-  const { count } = useAppSelector(state => state.count);
-
+function Home() {
   return (
-    <div>
-      <p>{process.env.NEXT_PUBLIC_ENV}</p>
-      <p>{count}</p>
-      <button onClick={() => dispatch(increaseCount())}>+</button>
-      <button onClick={() => dispatch(resetCount())}>reset</button>
-    </div>
+    <Layout>
+      <div>
+        <p>{process.env.NEXT_PUBLIC_ENV}</p>
+        <Button variant="contained">Hello World</Button>
+      </div>
+    </Layout>
   );
-};
+}
 
 export default Home;

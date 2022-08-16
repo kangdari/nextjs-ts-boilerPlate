@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+    height: 100%;
+}
+
+.without-ring {
+    @apply focus:ring-0 focus:ring-offset-0 focus:outline-none;
+}
+
+.pointer {
+    @apply cursor-pointer;
+}
+
+.bold {
+    @apply font-bold;
+}
